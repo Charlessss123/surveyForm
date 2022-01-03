@@ -1,0 +1,68 @@
+/*  Body element  */
+body {
+  background-color: #00bfff;
+  font-family: Verdana;
+  text-align: center;
+}
+
+/*  Form  */
+form {
+  background-color: #fff;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*  form Class */
+.form {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+/*  form Label */
+.form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/*  form input */
+.form input,
+.form select,
+.form textarea {
+  border: 1px solid #777;
+  border-radius: 2px;
+  font-family: inherit;
+  padding: 10px;
+  display: block;
+  width: 95%;
+}
+
+/*  form Radio button and Checkbox */
+.form input[type="radio"],
+.form input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+
+/*  Button */
+button {
+  background-color: #007399;
+  border: 1px solid #777;
+  border-radius: 20px;
+  font-family: inherit;
+  font-size: 20px;
+  display: block;
+  width: 25%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
