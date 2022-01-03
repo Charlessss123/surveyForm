@@ -1,0 +1,128 @@
+<!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Survey Form
+  </title>
+
+  <link href="css/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <h1 id="title">Survey Form</h1>
+
+  <p id="description">Please fill out this form and hit Submit</p>
+
+  <!-- Form -->
+  <form id="survey-form">
+
+    <div class="form">
+      <label for="name" id="name-label">
+        Name (required)
+      </label>
+
+      <!--  name -->
+      <input type="text" id="name" placeholder="Enter your name" required/>
+    </div>
+
+    <div class="form">
+      <label for="email" id="email-label">
+        Email
+      </label>
+
+      <!--  Email-->
+      <input type="email" id="email" placeholder="Enter your email" required/>
+    </div>
+
+    <div class="form">
+      <label for="age" id="number-label">
+        Age
+      </label>
+
+      <!-- Input Type Text -->
+      <input type="number" id="number" placeholder="Enter your age" min="18" step="5" max="40"/>
+    </div>
+
+    <div class="form">
+      <label for="level" id="level-label">
+        What's your highest level of education
+      </label>
+
+      <!-- Dropdown  -->
+      <select name="level" id="dropdown">
+        <option value="Bachelor degree">Bachelor Degree</option>
+        <option value="Master  degree">Master degree</option>
+        <option value="PHD">
+          PHD
+        </option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form">
+      <label>
+        Would you recommend this course to a friend?
+      </label>
+
+      <!-- Radio Button -->
+      <label for="button-1">
+        <input type="radio" id="button-1" name="button" value = "Yes">Yes</input>
+      </label>
+      <label for="button-2">
+        <input type="radio" id="button-2" name="button"  value = "No">No</input>
+      </label>
+      <label for="button-3">
+        <input type="radio" id="button-3" name="button"  value = "maybe">Maybe</input>
+      </label>
+    </div>
+
+    <div class="form">
+      <label>Courses already taken
+        <small>(Check all that apply)</small>
+      </label>
+      <!-- Input Type Checkbox -->
+      <label for="opt-1">
+        <input type="checkbox" value="Front-end" name="opt">Front-end development</input></label>
+      <label for="opt-2">
+        <input type="checkbox" value="Back-end" name="opt">Back-end development</input></label>
+      <label for="opt-3">
+        <input type="checkbox" value="Full-stack" name="opt">Full Stack</input></label>
+
+    </div>
+
+    <div class="form">
+      <label for="comment">
+        Any comments or suggestions
+      </label>
+
+      <!-- comment section -->
+      <textarea name="comment" id="comment" placeholder="Enter your comment here">
+            </textarea>
+    </div>
+
+    <!-- Submit button -->
+    <button id="submit" type="submit" value="submit">
+      Submit
+    </button>
+  </form>
+</body>
+
+</html>
+
+</body>
